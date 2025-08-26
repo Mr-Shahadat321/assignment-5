@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome-cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Daisy-UI & tailwind-CDN -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body>
-    <h1 class="bg-gray-400 font-bold">Hello Assignment</h1>
-    <button>Click Me</button>
+<body class="max-w-[1380px] mx-auto">
+    <header>
+        <div class="nav-container flex justify-between p-5 items-center">
+            <div class="nav-left flex items-center gap-3">
+                <img src="./assets/logo.png" class="w-10" alt="">
+                <div class="font-extrabold text-[#006747] leading-none">Emergency <br>service</div>
+            </div>
+            <div class="nav-right flex gap-5 ">
+            <button class="btn btn-soft bg-gray-100 rounded-3xl">
+                0 <img src="./assets/heart.png" class="w-5" alt="">
+            </button>
+            <button class="btn bg-gray-100 rounded-3xl">100 🪙</button>
+            <button class="btn rounded-3xl bg-[#00A63E] text-white">2 copy</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner max-w-[1360px] mx-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <div class="flex justify-center items-center flex-col pt-5">
+                <img src="./assets/logo.png" class="w-24" alt="">
+                <h1 class="text-white font-bold text-[40px] py-2">Emergency Service Directory</h1>
+                <p class="text-white pb-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </section>
+        
+
+
+    </main>
 
     <script src="./script.js"></script>
 </body>
