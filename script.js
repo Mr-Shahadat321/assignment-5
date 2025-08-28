@@ -56,6 +56,13 @@ for (const callBtn of callBtns) {
       }        
   });
 }
+//clear history
+
+const clearHistoryBtn = document.getElementById("clear-history-btn")
+ clearHistoryBtn.addEventListener('click', function(){
+      const historyList = document.getElementById("history-list")
+      historyList.innerHTML = "";
+ })
 
 //copy functionalities
 
