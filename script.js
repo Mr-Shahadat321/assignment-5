@@ -1,4 +1,4 @@
-//for increment heart icone
+//for increment heart icon
 
 const crtBtns = document.getElementsByClassName("crtBtn");
 
@@ -60,12 +60,22 @@ for (const callBtn of callBtns) {
 //copy functionalities
 
 const copyBtns = document.getElementsByClassName("copyBtn");
-const navbarCopyCount = document.getElementById("navbar-copy-count")
+
 
 
 for(const copyBtn of copyBtns){
   copyBtn.addEventListener('click', function(){
-    
+    const serviceNumber = copyBtn.parentNode.parentNode.children[2].children[0].innerText
+    // console.log(serviceNumber);
+    navigator.clipboard.writeText(serviceNumber);
+    alert(`Number copied ${serviceNumber}`)
+    const navbarCopyCount = document.getElementById("navbar-copy-count")
+    const currentCopyCount = Number(document.getElementById("navbar-copy-count").innerText)
+
+    navbarCopyCount.innerText = currentCopyCount + 1
+
+
+     
   })
 }
 
